@@ -1,0 +1,29 @@
+@media screen and (max-width:767px) {
+    body{
+        display: block;
+    }
+    .app{
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+    .player img{
+        width: 50px;
+    }
+    .letter{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #keyboard{
+        grid-template-columns: repeat(5, 40px);
+    }
+    .keyBtn{
+        height: 40px;
+    }
+    #hint-box{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}

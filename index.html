@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <main class="app">
+        <h1>TypeTussle</h1>
+        <div class="player-container row">
+            <div class="player" id="human">
+                <div class="row character">
+                    <img src="./assets/images/Human/face.png" alt="" id="human-img">
+                    <h3 class="player-name">Player</h3>
+                </div>
+                <div class="hp" id="humanHP">
+                    <div class="energy"></div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="row character">
+                    <img src="./assets/images/Robots/face.png" alt="" id="robot-img">
+                    <h3 class="player-name">Computer</h3>
+                </div>
+                <div class="hp" id="robotHP">
+                    <div class="energy"></div>
+                </div>
+            </div>
+        </div>
+        <div id="text-box">
+            <div id="word-box"></div>
+            <div id="hint-box"></div>
+            <div id="chances"></div>
+            <div id="keyboard"></div>
+        </div>
+        <div id="result-box">
+        </div>
+    </main>
+    <script type="module" src="./js/script.js" ></script>
+</body>
+
+</html>

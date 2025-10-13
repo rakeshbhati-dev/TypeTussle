@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+     font-family: "Lato", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    width: 80%;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    position: relative;
+}
+h1{
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+}
+.player img{
+    width: 80px;
+    /* border: 1px solid red; */
+}
+.player-name{
+    display: inline-block;
+}
+.character{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.player-container{
+    display: flex;
+    justify-content: space-between;
+}
+.hp{
+    border: 1px solid black;
+    height: 10px;
+}
+.energy{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+#text-box{
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+}
+#keyboard{
+    display: grid;
+    grid-template-columns: repeat(5, 50px); /* 10 keys per row */
+    gap: 10px;
+    justify-content: center; /* center keyboard */
+    padding: 10px;
+}
+.keyBtn{
+    background-color: #f6f6f6;
+    border: 1px solid #019dff;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: gray;
+    cursor: pointer;
+    height: 50px;
+}
+.keyBtn.correct{
+    background-color: #01ff12;
+    color: white;
+    border-color: #01ff12;
+}
+.keyBtn.wrong{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+.keyBtn:active{
+    background-color: #019dff;
+    color: white;
+}
+.letter{
+    display: inline-block;
+    border: 1px solid #019dff;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#hint-box{
+    color: grey;
+    margin-bottom: 20px;
+}
+#result-box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#result-box button{
+    background-color: #019dff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#result-box div{
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 20px;
+}
