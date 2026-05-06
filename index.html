@@ -15,16 +15,19 @@
         <div class="player-container row">
             <div class="player" id="human">
                 <div class="row character">
-                    <img src="./assets/images/Human/face.png" alt="" id="human-img">
+                    <img src="./assets/images/Human/face.png" alt="Player character" id="human-img">
                     <h3 class="player-name">Player</h3>
                 </div>
                 <div class="hp" id="humanHP">
                     <div class="energy"></div>
                 </div>
             </div>
+
+            <span class="vs-badge">VS</span>
+
             <div class="player">
                 <div class="row character">
-                    <img src="./assets/images/Robots/face.png" alt="" id="robot-img">
+                    <img src="./assets/images/Robots/face.png" alt="Computer character" id="robot-img">
                     <h3 class="player-name">Computer</h3>
                 </div>
                 <div class="hp" id="robotHP">
@@ -32,16 +35,17 @@
                 </div>
             </div>
         </div>
+
         <div id="text-box">
             <div id="word-box"></div>
             <div id="hint-box"></div>
             <div id="chances"></div>
             <div id="keyboard"></div>
         </div>
-        <div id="result-box">
-        </div>
+
+        <div id="result-box"></div>
     </main>
-    <script type="module" src="./js/script.js" ></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
